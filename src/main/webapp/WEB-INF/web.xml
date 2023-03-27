@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <jsp-file>/index.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/Welcome</url-pattern> <!-- Welcome page or the index page -->
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>LoginPage</servlet-name>
+    <jsp-file>/Login.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LoginPage</servlet-name>
+    <url-pattern>/Login</url-pattern> <!-- Login Page -->
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>Validation</servlet-name>
+    <jsp-file>/Validate.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Validation</servlet-name>
+    <url-pattern>/Validate</url-pattern> <!-- Login Page -->
+</servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>ForgotPassword</servlet-name>
+    <jsp-file>/ForgotPassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ForgotPassword</servlet-name>
+    <url-pattern>/Forgotpassword</url-pattern> <!-- ForgotPassword Page -->
+</servlet-mapping>
+ 
+ 
+    <servlet>
+    <servlet-name>ResetPassword</servlet-name>
+    <jsp-file>/ResetPassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ResetPassword</servlet-name>
+    <url-pattern>/Resetpassword</url-pattern> <!-- ResetPassword Page -->
+</servlet-mapping>
+ 
+  
+   
+  <servlet>
+    <servlet-name>Administrators</servlet-name>
+    <jsp-file>/Admin.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Administrators</servlet-name>
+    <url-pattern>/Admin</url-pattern> <!-- Admin Page -->
+</servlet-mapping>
+  
+  
+   
+  <servlet>
+    <servlet-name>ManagePost</servlet-name>
+    <jsp-file>/Manage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ManagePost</servlet-name>
+    <url-pattern>/Admin-managepost</url-pattern> <!-- Admin managepost Page -->
+</servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>AddPost</servlet-name>
+    <jsp-file>/AddPost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddPost</servlet-name>
+    <url-pattern>/Admin-addpost</url-pattern> <!-- Admin addpost Page -->
+</servlet-mapping>
+  
+ 
+    <servlet>
+    <servlet-name>SuperAdminEdit</servlet-name>
+    <jsp-file>/S_AdminEdit.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminEdit</servlet-name>
+    <url-pattern>/Admin-editpost</url-pattern> <!-- Admin edit Page -->
+</servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>SuperAdminView</servlet-name>
+    <jsp-file>/view.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminView</servlet-name>
+    <url-pattern>/Admin-view</url-pattern> <!-- view.jsp view Page -->
+</servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>AdminConfirmPost</servlet-name>
+    <jsp-file>/S_ConfirmPost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AdminConfirmPost</servlet-name>
+    <url-pattern>/Admin-confirmpost</url-pattern> <!-- S_ConfirmPost.jsp view Page -->
+</servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AdminEditConfirmPost</servlet-name>
+    <jsp-file>/S_EditConfirmPost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AdminEditConfirmPost</servlet-name>
+    <url-pattern>/Admin-editconfirmpost</url-pattern> <!-- S_ConfirmPost.jsp view Page -->
+</servlet-mapping>
+
+
+
+   <servlet>
+    <servlet-name>SuperAdminCategories</servlet-name>
+    <jsp-file>/S_Categories.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminCategories</servlet-name>
+    <url-pattern>/Admin-categories</url-pattern> <!-- S_Categories view Page -->
+</servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>SuperAdminDraft</servlet-name>
+    <jsp-file>/S_Draft.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminDraft</servlet-name>
+    <url-pattern>/Admin-draft</url-pattern> <!-- S_Draft.jsp Page -->
+</servlet-mapping>
+  
+   
+    
+     <servlet>
+    <servlet-name>SuperAdminEditDraft</servlet-name>
+    <jsp-file>/S_AdminEditDraft.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminEditDraft</servlet-name>
+    <url-pattern>/Admin-editdraft</url-pattern> <!-- S_AdminEditDraft.jsp  Page -->
+</servlet-mapping>
+  
+   
+   
+        <servlet>
+    <servlet-name>SuperAdminAllUsers</servlet-name>
+    <jsp-file>/S_Users.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminAllUsers</servlet-name>
+    <url-pattern>/Admin-All-users</url-pattern> <!-- S_Users.jsp  Page -->
+</servlet-mapping>
+  
+  
+          <servlet>
+    <servlet-name>SuperAdminAddUsers</servlet-name>
+    <jsp-file>/S_addusers.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SuperAdminAddUsers</servlet-name>
+    <url-pattern>/Admin-adduser</url-pattern> <!-- S_addusers.jsp  Page -->
+</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SuperAdminUpdateUsers</servlet-name>
+		<jsp-file>/S_updateuser.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SuperAdminUpdateUsers</servlet-name>
+		<url-pattern>/Admin-updateuser</url-pattern> <!-- S_addusers.jsp Page -->
+	</servlet-mapping>
+  
+  
+  
+  <servlet>
+		<servlet-name>SiteSettings</servlet-name>
+		<jsp-file>/S_SiteSettings.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SiteSettings</servlet-name>
+		<url-pattern>/Admin-SiteSettings</url-pattern> <!-- S_SiteSettings.jsp Page -->
+	</servlet-mapping>
+  
+
+  
+  
+  <servlet>
+		<servlet-name>ViewSpecificPost</servlet-name>
+		<jsp-file>/ViewPost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewSpecificPost</servlet-name>
+		<url-pattern>/Viewpost</url-pattern> <!-- S_addusers.jsp Page -->
+	</servlet-mapping>
+  
+
+<servlet>
+		<servlet-name>AdminMessage</servlet-name>
+		<jsp-file>/S_Message.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminMessage</servlet-name>
+		<url-pattern>/Admin-message</url-pattern> <!-- S_Message.jsp Page -->
+	</servlet-mapping>
+  
+    <servlet>
+		<servlet-name>AdminViewMessage</servlet-name>
+		<jsp-file>/S_ViewMessage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>AdminViewMessage</servlet-name>
+		<url-pattern>/Admin-ViewMessage</url-pattern> <!-- S_ViewMessage.jsp Page -->
+	</servlet-mapping>
+
+      <servlet>
+		<servlet-name>AdminMessagePage</servlet-name>
+		<jsp-file>/S_MessagePage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>AdminMessagePage</servlet-name>
+		<url-pattern>/Admin-MessagePage</url-pattern> <!-- S_MessagePage.jsp Page -->
+	</servlet-mapping>
+	
+	
+	
+      <servlet>
+		<servlet-name>PostConcern</servlet-name>
+		<jsp-file>/S_PostConcern.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>PostConcern</servlet-name>
+		<url-pattern>/Postconcern</url-pattern> <!-- S_PostConcern.jsp Page -->
+	</servlet-mapping>
+	
+	
+	
+      <servlet>
+		<servlet-name>Audit Log</servlet-name>
+		<jsp-file>/Audit Logs.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>Audit Log</servlet-name>
+		<url-pattern>/Admin-AuditLogs</url-pattern> <!-- Audit Logs.jsp.jsp Page -->
+	</servlet-mapping>
+  
+   
+  
+      <servlet>
+		<servlet-name>Admin Profile</servlet-name>
+		<jsp-file>/Admin_profile.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>Admin Profile</servlet-name>
+		<url-pattern>/Admin-EditProfile</url-pattern> <!-- Admin Edit Profile.jsp Page -->
+	</servlet-mapping>
+   
+     <servlet>
+		<servlet-name>AdminChangepassword</servlet-name>
+		<jsp-file>/Admin_changepassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>AdminChangepassword</servlet-name>
+		<url-pattern>/Admin-changepassword</url-pattern> <!-- Admin changepassword.jsp Page -->
+	</servlet-mapping>
+   
+   
+        <servlet>
+		<servlet-name>AdminPages</servlet-name>
+		<jsp-file>/Pages.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>AdminPages</servlet-name>
+		<url-pattern>/Admin-Page</url-pattern> <!-- Pages.jsp Page -->
+	</servlet-mapping>
+   
+      <servlet>
+		<servlet-name>AddPages</servlet-name>
+		<jsp-file>/AddPages.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>AddPages</servlet-name>
+		<url-pattern>/Admin-addpage</url-pattern> <!-- AddPages.jsp Page -->
+	</servlet-mapping>
+   
+   
+    <servlet>
+		<servlet-name>AdminEditPage</servlet-name>
+		<jsp-file>/Admin_EditPage.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>AdminEditPage</servlet-name>
+		<url-pattern>/Admin-editpage</url-pattern> <!-- Admin_EditPage.jsp Page -->
+	</servlet-mapping>
+	
+	
+	  
+    <servlet>
+		<servlet-name>MenuPage</servlet-name>
+		<jsp-file>/Menu.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+  
+	<servlet-mapping>
+		<servlet-name>MenuPage</servlet-name>
+		<url-pattern>/Menu</url-pattern> <!-- Menu.jsp Page -->
+	</servlet-mapping>
+   
+   
+   
+   <!--   SECRETARY PAGES START HERE -->
+
+
+	<servlet>
+		<servlet-name>Secretary Page</servlet-name>
+		<jsp-file>/Secretary.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary Page</servlet-name>
+		<url-pattern>/Secretary</url-pattern> <!-- Secretary Page -->
+	</servlet-mapping>
+  
+   <servlet>
+		<servlet-name>Secretary Managepost</servlet-name>
+		<jsp-file>/Secretary_managepost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary Managepost</servlet-name>
+		<url-pattern>/Secretary-managepost</url-pattern> <!-- Secreatary_managepost.jsp Page -->
+	</servlet-mapping>
+	
+	 
+   <servlet>
+		<servlet-name>Secretary View</servlet-name>
+		<jsp-file>/Secretary_view.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary View</servlet-name>
+		<url-pattern>/Secretary-view</url-pattern> <!-- Secretary_view.jsp Page -->
+	</servlet-mapping>
+  
+  
+   <servlet>
+		<servlet-name>Secretary Addpost</servlet-name>
+		<jsp-file>/Secretary-addpost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary Addpost</servlet-name>
+		<url-pattern>/Secretary-addpost</url-pattern> <!-- Secretary-addpost.jsp Page -->
+	</servlet-mapping>
+  
+   <servlet>
+   
+		<servlet-name>Secretary Draft</servlet-name>
+		<jsp-file>/Secretary_draft.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary Draft</servlet-name>
+		<url-pattern>/Secretary-draft</url-pattern> <!-- Secretary-draft.jsp Page -->
+	</servlet-mapping>
+	
+	 <servlet>
+   
+		<servlet-name>Secretary EditDraft</servlet-name>
+		<jsp-file>/Secretary_EditDraft.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary EditDraft</servlet-name>
+		<url-pattern>/Secretary-EditDraft</url-pattern> <!-- Secretary_EditDraft.jsp Page -->
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+   
+		<servlet-name>Secretary Profile</servlet-name>
+		<jsp-file>/Secretary_profile.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary Profile</servlet-name>
+		<url-pattern>/Secretary_profile</url-pattern> <!-- Secretary_profile.jsp Page -->
+	</servlet-mapping>
+	
+  
+  <servlet>
+   
+		<servlet-name>Secretary Changepassword</servlet-name>
+		<jsp-file>/Secretary_changepassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Secretary Changepassword</servlet-name>
+		<url-pattern>/Secretary-changepassword</url-pattern> <!-- Secretary_changepassword.jsp Page -->
+	</servlet-mapping>
+	
+   
+   
+   
+   
+   
+     <!--   SECRETARY PAGES END HERE -->
+     
+     
+     <!--   TREASURER  PAGES START HERE -->
+     
+     
+     <servlet>
+		<servlet-name>Treasurer Page</servlet-name>
+		<jsp-file>/Treasurer.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer Page</servlet-name>
+		<url-pattern>/Treasurer</url-pattern> <!-- Treasurer Page -->
+	</servlet-mapping>
+  
+  
+
+       <servlet>
+		<servlet-name>Treasurer Changepassword</servlet-name>
+		<jsp-file>/Treasurer_changepassword.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer Changepassword</servlet-name>
+		<url-pattern>/Treasurer-changepassword</url-pattern> <!-- Treasurer_changepassword.jsp Page -->
+	</servlet-mapping>
+	
+	
+	 <servlet>
+		<servlet-name>Treasurer Profile</servlet-name>
+		<jsp-file>/Treasurer_profile.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer Profile</servlet-name>
+		<url-pattern>/Treasurer-profile</url-pattern> <!-- Treasurer_profile.jsp Page -->
+	</servlet-mapping>
+	
+	
+	 <servlet>
+		<servlet-name>Treasurer Managepost</servlet-name>
+		<jsp-file>/Treasurer_managepost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer Managepost</servlet-name>
+		<url-pattern>/Treasurer-managepost</url-pattern> <!-- Treasurer_managepost.jsp Page -->
+	</servlet-mapping>
+  
+  
+      <servlet>
+		<servlet-name>Treasurer View</servlet-name>
+		<jsp-file>/Treasurer_view.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer View</servlet-name>
+		<url-pattern>/Treasurer-view</url-pattern> <!-- Treasurer_view.jsp Page -->
+	</servlet-mapping>
+    
+    
+    
+      <servlet>
+		<servlet-name>Treasurer Addpost</servlet-name>
+		<jsp-file>/Treasurer_addpost.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer Addpost</servlet-name>
+		<url-pattern>/Treasurer-addpost</url-pattern> <!-- Treasurer-addpost.jsp Page -->
+	</servlet-mapping>
+    
+    
+         <servlet>
+		<servlet-name>Treasurer Draft</servlet-name>
+		<jsp-file>/Treasurer_draft.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer Draft</servlet-name>
+		<url-pattern>/Treasurer-draft</url-pattern> <!-- Treasurer-addpost.jsp Page -->
+	</servlet-mapping>
+	
+	
+         <servlet>
+		<servlet-name>Treasurer EditDraft</servlet-name>
+		<jsp-file>/Treasurer_EditDraft.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Treasurer EditDraft</servlet-name>
+		<url-pattern>/Treasurer-EditDraft</url-pattern> <!-- Treasurer-addpost.jsp Page -->
+	</servlet-mapping>
+    
+    
+    
+    
+     
+       <!--   TREASURER  PAGES END HERE -->
+   
+  
+   <error-page>  
+  <exception-type>java.lang.Exception</exception-type>  
+  <location>/error.jsp</location>  
+  </error-page>  
+   
+  
+  
+  
+  
+    <session-config>
+    <session-timeout>15</session-timeout>		<!-- SESSION  TIMEOUT IN 15 minutes  -->
+  </session-config>
+  
+  
+  
+  
+  <display-name>Barangay-Web-Builder</display-name>
+    <welcome-file-list>
+    <welcome-file>Page</welcome-file>
+
+  
+  </welcome-file-list>
+</web-app>

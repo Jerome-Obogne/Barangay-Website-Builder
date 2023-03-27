@@ -1,0 +1,266 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+/* font-family: 'Oxygen', sans-serif , font-family: 'Quicksand', sans-serif;*/
+
+
+/*  ui color   #62BE1E , #FFFFFF    ,footer =  #1E1D24 */
+
+:root {
+    --main-bg-color: #1E1D24;
+    --main-text-color: #FFFF;
+}
+
+* {
+    line-height: 1.5;
+    font-family: 'Oxygen', sans-serif
+}
+
+.ck-editor__editable_inline {
+    min-height: 300px;
+}
+
+.primary-text {
+    color: var(--main-text-color);
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toogled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    color: #1E1D24;
+}
+
+.list-group-item {
+    border: none;
+    padding: 20px 30px;
+    color: #ffff;
+}
+
+.list-group-item.active {
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-decoration: underline;
+}
+
+.List-data i {
+    margin-right: 10px;
+}
+
+.sample {
+    max-width: 50px;
+    min-height: 40px;
+}
+
+
+/* Dasboard */
+
+.Dashboard {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.Dashboard {
+    text-align: center;
+}
+
+
+/* navbardropdown */
+
+.postNav.navbar-nav .nav-item .nav-link {
+    color: #ffff;
+    text-align: center;
+}
+
+.postNav.navbar-nav .nav-item .nav-link:hover {
+    background-color: white;
+    color: #1E1D24;
+}
+
+.post-text {
+    font-size: 1.1rem;
+    margin: 10px 0 20px;
+}
+
+
+/* form Post */
+
+.form-container {
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .6);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.form-container form label {
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+.form-container form input,
+.form-container form select {
+    font-size: .9rem;
+}
+
+.formBtn a {
+    display: inline-block;
+    margin: 2px;
+}
+
+.form-container table {
+    font-size: .9rem;
+}
+.form-container .cover-image img {
+    max-height: 100px;
+    max-width: 150px;
+}
+
+/* Table Image  */
+
+.table-image td,
+.table-image th {
+    vertical-align: middle;
+}
+
+.table-image td img {
+    max-width: 80px;
+    margin: auto;
+}
+
+
+/* PASSWORD SHOW AND HIDE  START HERE */
+
+.password-toggle {
+    position: relative;
+}
+
+#toggle1 {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-right: 10px;
+    background: url(../image/show.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+#toggle1.hide {
+    background: url(../image/hide.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+
+/* PASSWORD SHOW AND HIDE  END HERE */
+
+
+/*  Table button */
+
+.tableBtn a {
+    font-size: .9rem;
+    color: white;
+}
+
+.tableBtn button {
+    width: 40px;
+    display: inline-block;
+}
+
+
+
+
+/* Messages */
+
+.Loginform-container {
+    font-family: 'Oxygen', sans-serif;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px 40px;
+    /* background-color: #ffff;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5); */
+}
+
+
+
+/* footer section */
+
+
+.footerHeader {
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.footer-text {
+    text-align: justify;
+    font-size: .95rem;
+}
+
+.nav.flex-column li {
+    margin: 5px 0px;
+    font-size: .95rem;
+}
+
+.nav.flex-column li i {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.footer-title {
+    background-color: #1E1D24;
+    color: white;
+    padding-bottom: 0;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: 0rem;
+    }
+}
