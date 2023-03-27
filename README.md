@@ -12,7 +12,7 @@
 
 ## Demo 
 
-![HomePage](image/Cms-HomePage.png)
+![HomePage](image/Cms-Homepage.png)
 
 <p align="center">
 <img alt="CMS GIF" src="image/CMS.gif">
