@@ -2,7 +2,7 @@
 # Barangay Website Builder For LGU Quality E-Services
 
 ## Description
- This is a **Capstone Thesis Project** which is the main objective is to design and  develop a website builder for barangay
+ This is a **Content Management System Capstone Thesis Project** which is the main objective is to design and  develop a website builder for barangay
  that help the barangay officials create,manage, and modify content on a website
  without the need for specialized technical knowledge to provide reliable information for the residents. 
  It used MVC Design Pattern for developing the web application.
